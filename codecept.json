@@ -1,0 +1,55 @@
+{
+  "tests": "./specs/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "multiple": {
+    "ie": {
+        "grep": "@ie",
+        "browsers": [
+            "internet explorer"
+        ],
+        "restart": true,
+        "keepBrowserState": true,
+        "keepCookies": true
+    },
+    "chrome": {
+        "grep": "@chrome",
+        "browsers": [
+            "chrome"
+        ],
+        "restart": true,
+        "keepBrowserState": true,
+        "keepCookies": false
+    }
+},
+  "helpers": {
+      "WebDriverIO": {
+      "url": "https://agentcis.com",
+      "browser": "chrome",
+      "desiredCapabilities": {
+        "chromeOptions": {
+          
+        }
+      }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "loop": "./Pages/loop.js",
+    "signupage": "./Pages/Live_signup.js"
+     },
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "mochaFile": "output/result.xml"
+  },
+  "mochawesome": {
+    "stdout": "./output/console.log",
+    "options": {
+      "reportDir": "./output",
+      "reportFilename": "report"
+   }
+ }
+  },
+  "name": "agentcis-test"
+}

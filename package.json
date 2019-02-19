@@ -1,0 +1,36 @@
+{
+  "name": "agentcis-test",
+  "version": "1.0.0",
+  "main": "accounts_test.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "puppeteer": "^1.6.0",
+    "codeceptjs": "^1.3.2",
+    "mocha-junit-reporter": "^1.17.0",
+    "mocha-multi": "^1.0.1",
+    "mochawesome": "^3.0.2",
+    "selenium-standalone": "^6.15.1",
+    "webdriverio": "^4.13.1",
+    "geckodriver": "^1.12.1"
+  },
+  "devDependencies": {
+    "geckodriver": "^1.12.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushan088/AGproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sushan088/AGproject/issues"
+  },
+  "homepage": "https://github.com/sushan088/AGproject#readme",
+  "description": ""
+}
